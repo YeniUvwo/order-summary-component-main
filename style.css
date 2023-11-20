@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: hsl(225, 100%, 94%);
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  height: 100%;
+  padding: 20px;
+
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.hero-img{
+  max-width: 380px;
+  width: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+main{
+  background-color: #fff;
+
+  max-width: 380px;
+  width: 90%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: clamp(1.2em, 6vw, 1.5em);
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+
+  margin: 30px 0 20px;
+}
+
+.stream{
+  text-align: center;
+  font-size: clamp(1em, 4vw, 1em);
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6em;
+
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.subscription{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+
+  width: 85%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+
+  background-color: hsl(245, 75%, 98%);
+}
+
+.plan{
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.music-icon{
+  width: 50px;
+}
+
+.annual-plan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.annual-text{
+  color: hsl(223, 47%, 23%);
+  font-size: clamp(0.7em, 4vw, 1em);
+  font-weight: 900;
+}
+
+.year-text{
+  font-size: clamp(0.6em, 4vw, 0.9em);
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.change-text{
+  font-size: clamp(0.6em, 4vw, 0.9em);
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+.change-text:hover{
+  color: hsl(245, 75%, 62%);
+  cursor: pointer;
+}
+
+button{
+  width: 85%;
+  border: none;
+  border-radius: 13px;
+  padding: 20px 0;
+  margin-bottom: 25px;
+
+  font-size: 1em;
+  font-weight: 700;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(0, 0%, 98%);
+  box-shadow: 2px 14px 16px rgb(56, 41, 224, 0.2);
+}
+button:hover{
+  background-color: hsl(245, 75%, 62%);
+  cursor: pointer;
+}
+
+.cancel-text{
+  margin-bottom: 30px;
+
+  color: hsl(224, 23%, 55%);
+  font-size: 1.05em;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cancel-text:hover{
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
