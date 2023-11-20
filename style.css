@@ -27,7 +27,7 @@ body{
 }
 
 .hero-img{
-  max-width: 350px;
+  max-width: 380px;
   width: 90%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -36,7 +36,7 @@ body{
 main{
   background-color: #fff;
 
-  max-width: 350px;
+  max-width: 380px;
   width: 90%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
