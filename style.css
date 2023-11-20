@@ -9,6 +9,8 @@ body{
   background-image: url(images/pattern-background-mobile.svg);
   background-color: hsl(225, 100%, 94%);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 25vh;
 }
 
 .container{
@@ -46,7 +48,7 @@ main{
 }
 
 h1{
-  font-size: clamp(1.2em, 6vw, 1.5em);
+  font-size: 1.2em;
   font-weight: 900;
   color: hsl(223, 47%, 23%);
 
@@ -55,7 +57,7 @@ h1{
 
 .stream{
   text-align: center;
-  font-size: clamp(1em, 4vw, 1em);
+  font-size: 0.9em;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
   line-height: 1.6em;
@@ -85,7 +87,7 @@ h1{
 }
 
 .music-icon{
-  width: 50px;
+  width: 45px;
 }
 
 .annual-plan{
@@ -97,18 +99,18 @@ h1{
 
 .annual-text{
   color: hsl(223, 47%, 23%);
-  font-size: clamp(0.7em, 4vw, 1em);
+  font-size: 0.7em;
   font-weight: 900;
 }
 
 .year-text{
-  font-size: clamp(0.6em, 4vw, 0.9em);
+  font-size: 0.7em;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
 }
 
 .change-text{
-  font-size: clamp(0.6em, 4vw, 0.9em);
+  font-size: 0.7em;
   font-weight: 900;
   color: hsl(245, 75%, 52%);
   text-decoration: underline;
@@ -122,10 +124,10 @@ button{
   width: 85%;
   border: none;
   border-radius: 13px;
-  padding: 20px 0;
+  padding: 18px 0;
   margin-bottom: 25px;
 
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 700;
   background-color: hsl(245, 75%, 52%);
   color: hsl(0, 0%, 98%);
@@ -140,7 +142,7 @@ button:hover{
   margin-bottom: 30px;
 
   color: hsl(224, 23%, 55%);
-  font-size: 1.05em;
+  font-size: 0.9em;
   font-weight: 700;
   cursor: pointer;
 }
@@ -156,9 +158,28 @@ button:hover{
   color: hsl(228, 45%, 44%); 
 }
 
-@media(min-width: 375.99px) {
+@media(min-width: 500px) {
   body{
     background-image: url(images/pattern-background-desktop.svg);
-    background-position-y: -50px;
+  }
+
+  h1{
+    font-size: 1.5em;
+  }
+
+  .stream{
+    font-size: 1em;
+  }
+
+  .annual-text{
+    font-size: 1em;
+  }
+  
+  .year-text{
+    font-size: 0.9em;
+  }
+  
+  .change-text{
+    font-size: 0.9em;
   }
 }
